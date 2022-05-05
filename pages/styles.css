@@ -1,0 +1,37 @@
+body {
+    background: white;
+    color: white;
+  }
+
+  .links {
+      display: inline !important;
+      margin: 5px;
+  }
+  
+  .dotnav {
+    position: relative;
+    padding: 10px 40px;
+    border-radius: 20px;
+  }
+
+
+  .dotnav-dot::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(215, 215, 215);
+    transition: box-shadow 0.5s;
+    margin: 5px;
+  }
+
+  .dotnav-dot_active::after {
+    background-color: rgb(16, 13, 13);
+  }
+  
+  .dotnav-dots {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
